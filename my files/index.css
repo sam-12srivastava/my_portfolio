@@ -1,0 +1,567 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  background: #f9f9f9;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+ overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f4f7;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #020202;
+}
+
+/* Header */
+#header {
+  /* linear-gradient(135deg, #9eedeb, #9eedeb);  */
+   background-color: #0b89bf;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  /* overflow: auto; */
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(88, 87, 87, 0.266);
+  color: #ddd;
+}
+
+/* Main Content */
+#main {
+  margin-left: 250px; /* Same as header width */
+  padding: 20px;
+}
+
+/* Responsive Adjustment for Smaller Screens */
+@media (max-width: 768px) {
+  #header {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.profile h1 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0b0b0b;
+  transform: translateY(-5px);
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #608bbf, #59c1e4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  /* position:fixed; */
+ 
+}
+
+.hero-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease;
+}
+
+.typed {
+  color: #ffdd57;
+  font-weight: 600;
+}
+
+.btn-get-started {
+  background: #ffdd57;
+  color: #333;
+  padding: 12px 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background: #ffcc00;
+  transform: translateY(-5px);
+}
+
+/* About Section */
+#about {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#about img {
+  border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+   /* transition: transform 0.3s ease; */
+  height: 300px;
+  width: 300px;
+}
+
+/* #about img:hover {
+  transform: scale(1.05);
+} */
+
+#about .content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about .content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+#about .content ul li i {
+  color: #007bff;
+  margin-right: 10px;
+}
+/* Skills Section */
+.skills {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.skills .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skills .skill-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+}
+
+.skills .skill-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.skills h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Resume Section */
+.resume {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.resume .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume .resume-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.resume .resume-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.resume .btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume .btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-5px);
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-links {
+  opacity: 1;
+}
+
+.portfolio-links a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  background: rgba(0, 123, 255, 0.8);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.portfolio-links a:hover {
+  background: rgba(0, 123, 255, 1);
+}
+/* Motivational Speakers Section */
+.motivational-speakers {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.motivational-speakers .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.motivational-speakers .speakers-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.motivational-speakers .speaker-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.motivational-speakers .speaker-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Circular Image Styling */
+.speaker-img img {
+  border-radius: 50%; /* Makes the image circular */
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  border: 4px solid #fff; /* Optional: Adds a border around the image */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.motivational-speakers .speaker-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 15px; /* Adds spacing between the image and the name */
+}
+
+.motivational-speakers .speaker-info p {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0; /* Removes extra margin at the bottom */
+}
+
+/* Optional: Add spacing between slides */
+.swiper-slide {
+  padding: 10px;
+}
+
+/* Swiper Slider Styles */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+}
+
+.swiper-pagination-bullet {
+  background: #007bff;
+}
+/* Contact Section */
+#contact {
+  padding: 80px 0;
+  background: #fff;
+}
+
+#contact .info {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#contact .info i {
+  font-size: 24px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+#contact .info h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#contact .info p {
+  font-size: 16px;
+  color: #666;
+}
+
+#contact .php-email-form {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#contact .php-email-form .form-control {
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+#contact .php-email-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+#contact .php-email-form button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contact .php-email-form button:hover {
+  background: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+#footer {
+  background: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer .copyright {
+  font-size: 14px;
+}
+
+#footer .credits {
+  font-size: 14px;
+}
+
+#footer .credits a {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

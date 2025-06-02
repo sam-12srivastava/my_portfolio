@@ -1,6 +1,6 @@
 # 🌐 My Portfolio Website
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and contact information using a clean, responsive design.
+Welcome to my personal portfolio website! This project showcases my skills, projects, resume and contact information using a clean, responsive design.
 
 ---
 
